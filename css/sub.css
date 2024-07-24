@@ -1,0 +1,272 @@
+:root {
+  --point-color1: #243c84;
+  --point-color2: #FEE500;
+  --point-color3: #03C75A;
+  --gray-400: #777;
+  --gray-500: #444;
+  --gray-600: #111;
+}
+
+/* 로그인 페이지 */
+.login_page .contents {
+  padding: 246px 0 120px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.login_page .contents .inner {
+  width: 440px;
+}
+.login_page .contents .inner h2 {
+  font-size: 38px;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* form_wrap */
+.login_page .contents .form_wrap {
+  margin-top: 40px;
+}
+.login_page .contents .form_wrap p {
+  margin-bottom: 8px;
+  color: var(--gray-600);
+}
+.login_page .contents .form_wrap span {
+  display: inline-block;
+  background: url(../images/icon_necd.svg) no-repeat;
+  width: 16px;
+  height: 16px;
+}
+.login_page .contents .form_wrap .input_wrap {
+  position: relative;
+  display: flex;
+}
+.login_page .contents .form_wrap .input_wrap .delete_btn {
+  position: absolute;
+  background: url(../images/icon_close_circle.svg) no-repeat;
+  width: 20px;
+  height: 20px;
+  border: none;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: none;
+}
+.login_page .contents .form_wrap input {
+  width: 100%;
+  height: 52px;
+  padding: 0 52px 0 16px;
+  border-radius: 10px;
+  border: 1px solid #eee;
+}
+.login_page .contents .form_wrap input::placeholder {
+  color: #999;
+  font-size: 14px;
+}
+
+.login_page .contents .password_wrap {
+  margin-top: 32px;
+}
+
+/* login_wrap */
+.login_page .contents .login_wrap {
+  margin: 40px 0 20px;
+}
+.login_page .contents .login_wrap .login_btn {
+  display: inline-block;
+  background: #2A47BF;
+  line-height: 58px;
+  color: #fff;
+  width: 100%;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.login_page .contents .login_search {
+  text-align: center;
+}
+.login_page .contents .login_search a {
+  font-size: 14px;
+  color: #666;
+  position: relative;
+}
+.login_page .contents .login_search a:first-of-type {
+  margin-right: 24px;
+}
+.login_page .contents .login_search a:first-of-type:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -16px;
+  width: 1px;
+  height: 10px;
+  background: #ccc;
+}
+
+.login_page .contents .btn_wrap {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.login_page .contents .btn_wrap a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 58px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 700;
+  position: relative;
+}
+.login_page .contents .btn_wrap .kakao_btn {
+  background: #FEE500;
+  color: #391B1B;
+}
+.login_page .contents .btn_wrap .naver_btn {
+  background: #03C75A;
+  color: #fff;
+}
+.login_page .contents .btn_wrap span {
+  position: relative;
+  padding-left: 28px;
+}
+.login_page .contents .btn_wrap span::before {
+  content: '';
+  position: absolute;
+  background: url(../images/icon_kakao_02.svg) no-repeat;
+  width: 24px;
+  height: 24px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.login_page .contents .btn_wrap .naver_btn span::before {
+  background-image: url(../images/icon_naver_02.svg);
+}
+
+.login_page .contents .mb_find {
+  margin-top: 40px;
+  padding-top: 24px;
+  text-align: center;
+  border-top: 1px solid #eee;
+  font-size: 14px;
+}
+.login_page .contents .mb_find p {
+  font-weight: 500;
+  color: var(--gray-600);
+}
+.login_page .contents .mb_find .login_search {
+  margin-top: 8px;
+}
+.login_page .contents .mb_find .login_search a:first-of-type:after {
+  right: -15px;
+}
+
+/* 뷰 페이지 */
+#container.sub_container .contents {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 15px 100px;
+  box-sizing: content-box;
+}
+
+/* 쓰기 페이지 */
+#container.sub_container .board_write .tit {
+  padding-top: 20px;
+}
+.board_write .write_btn {
+  display: inline-block;
+  background: #2A47BF;
+  line-height: 58px;
+  color: #fff;
+  width: 100px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+}
+.board_write .cancel_btn {
+  display: inline-block;
+  background: var(--gray-400);
+  line-height: 58px;
+  color: #fff;
+  width: 100px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 태블릿 구간 */
+@media (max-width:1200px) {
+  /* 공통 */
+  #container.sub_container .contents {
+    max-width: 1180px;
+    padding: 0 4%;
+    margin: 0;
+  }
+
+  /* 로그인 페이지 */
+  .login_page .contents {
+    padding: 58px 20px 40px;
+  }
+  .login_page .contents .inner h2 {
+    font-size: 22px;
+  }
+  .login_page .contents .form_wrap {
+    margin-top: 32px;
+  }
+  .login_page .contents .login_wrap {
+    margin: 20px 0 20px;
+  }
+}
+
+
+
+
+
+
+
+
+@media(max-width:767px) {
+  /* 리스트 페이지 */
+  .list_page .sub_visual {
+    height: 160px;
+  }
+  .list_page .sub_visual .visual_tit {
+    padding: 70px 0 19px;
+    font-size: 30px;
+  }
+  .list_page .sub_visual .visual_txt {
+    display: none;
+  }
+  .list_page .inner {
+    margin: 0 auto;
+  }
+  .list_page .board_top {
+    display: block;
+    padding: 50px 0 30px;
+  }
+  .list_page .board_search {
+    width: 100%;
+    max-width: none;
+  }
+}
